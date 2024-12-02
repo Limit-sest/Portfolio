@@ -5,29 +5,32 @@
 @layer base {
     :root,
     :root[data-theme="light"] {
-        --color-bgPrimary: 221 230 237;
-        --color-bgSecondary: 34 40 49;
-        --color-border: 34 40 49;
-        --color-accent: 34 40 49;
-        --color-accent2: 34 40 49;
-        --color-text: 34 40 49;
-        --color-textVibrant: 34 40 49;
+        --color-bgPrimary: 251 241 199;
+        --color-bgSecondary: 249 245 215;
+        --color-border: 235 219 178;
+        --color-accent: 214 93 14;
+        --color-accent2: 215 153 33;
+        --color-text: 60 56 54;
+        --color-textVibrant: 40 40 40;
     }
     @media (prefers-color-scheme: dark) {
         :root {
-            --color-bgPrimary: 221 230 237;
-            --color-bgSecondary: 34 40 49;
-            --color-border: 34 40 49;
-            --color-accent: 34 40 49;
-            --color-accent2: 34 40 49;
-            --color-text: 34 40 49;
-            --color-textVibrant: 34 40 49;
+            --color-bgPrimary: 40 40 40;
+            --color-bgSecondary: 29 32 33;
+            --color-border: 60 56 54;
+            --color-accent: 214 93 14;
+            --color-accent2: 215 153 33;
+            --color-text: 235 219 178;
+            --color-textVibrant: 251 241 199;
         }
     }
     :root[data-theme="dark"] {
-        --color-bgColor: 34 40 49;
-        --color-contentColor: 238 238 238;
-        --sun-fill: transparent;
-        --moon-fill: rgb(255, 255, 255);
+        --color-bgPrimary: 40 40 40;
+        --color-bgSecondary: 29 32 33;
+        --color-border: 60 56 54;
+        --color-accent: 214 93 14;
+        --color-accent2: 215 153 33;
+        --color-text: 235 219 178;
+        --color-textVibrant: 251 241 199;
     }
 }
