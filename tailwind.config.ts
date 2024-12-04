@@ -14,6 +14,10 @@ export default {
         text: "rgb(var(--color-text) / <alpha-value>)",
         textVibrant: "rgb(var(--color-textVibrant) / <alpha-value>)"
       }
+    },
+    fontFamily: {
+      'sans': ['"DM Sans"', 'sans-serif'],
+      'display': ['"Space Grotesk"', 'sans-serif'],
     }
   },
 
