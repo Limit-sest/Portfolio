@@ -1,11 +1,8 @@
 <script>
-    import Chip from "./Chip.svelte";
-    import ButtonPrimary from "./ButtonPrimary.svelte";
-    import ButtonSecondary from "./ButtonSecondary.svelte";
+
+import ButtonOutline from "$lib/ui/ButtonOutline.svelte";
 </script>
 
 <div class="p-10">
-    <Chip label="Skill"/>
-    <ButtonPrimary label="Button" href="https://example.com"/>
-    <ButtonSecondary label="Button" href="https://example.com" withIcon="true"/>
+    <ButtonOutline label="Go to home" href="/" />
 </div>
