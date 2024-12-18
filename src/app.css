@@ -6,11 +6,11 @@
 
 @layer base {
     :root {
-        --color-bgPrimary: 18 18 18;
-        --color-bgSecondary: 13 13 13;
+        --color-bg: 18 18 18;
+        --color-bg-dim: 13 13 13;
         --color-accent: 93 63 211;
-        --color-text: 191 191 191;
-        --color-display: 242 242 242;
+        --color-fg-dim: 191 191 191;
+        --color-fg: 242 242 242;
     }
 
 }
