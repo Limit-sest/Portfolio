@@ -5,34 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap');
 
 @layer base {
-    :root,
-    :root[data-theme="light"] {
-        --color-bgPrimary: 251 241 199;
-        --color-bgSecondary: 249 245 215;
-        --color-border: 235 219 178;
-        --color-accent: 214 93 14;
-        --color-accent2: 215 153 33;
-        --color-text: 60 56 54;
-        --color-textVibrant: 40 40 40;
+    :root {
+        --color-bg: 18 18 18;
+        --color-bg-dim: 13 13 13;
+        --color-accent: 93 63 211;
+        --color-fg-dim: 191 191 191;
+        --color-fg: 242 242 242;
     }
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --color-bgPrimary: 40 40 40;
-            --color-bgSecondary: 29 32 33;
-            --color-border: 60 56 54;
-            --color-accent: 214 93 14;
-            --color-accent2: 215 153 33;
-            --color-text: 235 219 178;
-            --color-textVibrant: 251 241 199;
-        }
-    }
-    :root[data-theme="dark"] {
-        --color-bgPrimary: 40 40 40;
-        --color-bgSecondary: 29 32 33;
-        --color-border: 60 56 54;
-        --color-accent: 214 93 14;
-        --color-accent2: 215 153 33;
-        --color-text: 235 219 178;
-        --color-textVibrant: 251 241 199;
-    }
+
 }

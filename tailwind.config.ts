@@ -6,13 +6,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        bgPrimary: "rgb(var(--color-bgPrimary) / <alpha-value>)",
-        bgSecondary: "rgb(var(--color-bgSecondary) / <alpha-value>)",
-        border: "rgb(var(--color-border) / <alpha-value>)",
+        bg: "rgb(var(--color-bg) / <alpha-value>)",
+        bgDim: "rgb(var(--color-bg-dim) / <alpha-value>)",
         accent: "rgb(var(--color-accent) / <alpha-value>)",
-        accent2: "rgb(var(--color-accent2) / <alpha-value>)",
-        text: "rgb(var(--color-text) / <alpha-value>)",
-        textVibrant: "rgb(var(--color-textVibrant) / <alpha-value>)"
+        fgDim: "rgb(var(--color-fg-dim) / <alpha-value>)",
+        fg: "rgb(var(--color-fg) / <alpha-value>)"
       }
     },
     fontFamily: {
