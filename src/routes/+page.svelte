@@ -16,7 +16,7 @@
     <ArrowDown class="w-10 h-10 text-fgDim mx-auto" />
 
     <section>
-        <h2>Things I've built</h2>
+        <h2 class="font-display font-medium text-3xl md:text-6xl text-fg mb-6">Programming projects</h2>
 
     </section>
 
