@@ -1,8 +1,8 @@
 <script>
-    import ButtonOutline from "$lib/ui/ButtonOutline.svelte";
-    import ButtonLinktree from "$lib/ui/ButtonLinktree.svelte";
     import ArrowDown from "virtual:icons/lucide/arrow-down"
     import PersonalCard from "$lib/ui/PersonalCard.svelte";
+    import ProjectCard from "$lib/ui/ProjectCard.svelte";
+    import { projects } from "$lib/data/projects.js";
 
 </script>
 
@@ -19,6 +19,7 @@
     <section>
         <h2 class="font-display font-medium text-3xl md:text-6xl text-fg mb-6">Programming projects</h2>
         <PersonalCard></PersonalCard>
+        <ProjectCard project={projects[0]}></ProjectCard>
 
     </section>
 
