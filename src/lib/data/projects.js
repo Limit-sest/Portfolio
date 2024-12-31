@@ -1,4 +1,4 @@
-[
+export const projects = [
   {
     "title": "TUI Expense tracker",
     "id": "tui_expense_tracker",
