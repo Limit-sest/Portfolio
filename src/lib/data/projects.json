@@ -1,6 +1,7 @@
 [
   {
     "title": "TUI Expense tracker",
+    "id": "tui_expense_tracker",
     "year": 2024,
     "quality": 3,
     "description": "A python terminal app for managing personal expenses. It was built using the Textual library.",
