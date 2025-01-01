@@ -8,7 +8,7 @@
             <img class="object-cover rounded-lg w-full h-full" src="/projects/{project.id}.png" alt="{project.imgAlt}">
         </div>
         <header>
-            <h2 class="font-medium text-xl text-fg font-display mb-1">{project.title}</h2>
+            <h3 class="font-medium text-xl text-fg font-display mb-1">{project.title}</h3>
             <div class="flex gap-1.5 mb-2" aria-label="Tags of {project.title}">
                 {#each project.tags as tag}
                     <p class="text-fgDim text-xs md:text-sm">{tag}</p>
