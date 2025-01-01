@@ -16,7 +16,7 @@
     <div class="flex flex-col gap-4 md:gap-6 p-4 md:p-6">
         <div>
             <h1 class="font-display font-bold text-2xl md:text-4xl text-fg mb-3">Antonín Kučera</h1>
-            <p class="text-lg md:text-xl text-fgDim">I’m a designer and programmer that enjoys making creative things.</p>
+            <p class="text-md md:text-lg text-fgDim">I’m a designer and programmer that enjoys making creative things.</p>
         </div>
         <hr class="border-t border-fgDim/75">
         <div class="flex flex-col gap-3">
