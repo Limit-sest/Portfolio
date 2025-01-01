@@ -6,6 +6,7 @@ export const projects = [
     "year": 2024,
     "quality": 3,
     "description": "A python terminal app for managing personal expenses. It was built using the Textual library.",
+    "personalNote": "This app was built during High Seas event from Hackclub.",
     "tags": [
       "Programming"
     ]
