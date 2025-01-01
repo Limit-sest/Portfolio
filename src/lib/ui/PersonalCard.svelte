@@ -24,7 +24,7 @@
                 <div class="flex gap-3 items-center">
                     <svelte:component this={link.icon} class="text-fgDim w-auto h-full"></svelte:component>
                     {#if link.href}
-                        <a class="text-fgDim hover:underline" href="{link.href}">{link.value}</a>
+                        <a class="text-fgDim hover:underline" href="{link.href}" target="_blank">{link.value}</a>
                     {:else}
                         <p class="text-fgDim">{link.value}</p>
                     {/if}
