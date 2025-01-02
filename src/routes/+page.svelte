@@ -1,9 +1,11 @@
 <script>
-    import ArrowDown from "virtual:icons/lucide/arrow-down"
     import PersonalCard from "$lib/ui/PersonalCard.svelte";
     import ProjectCard from "$lib/ui/ProjectCard.svelte";
     import { projects } from "$lib/data/projects.js";
+    // TODO: Personal note
+    // TODO: Overwrite personal note with hover (+accent effect)
     // TODO: Show projects with quality > 5, other behind button
+    // TODO: Section with design images, using mansory grid. Have a personal note option for every image.
 </script>
 
 <main class="px-4 pt-20 flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">

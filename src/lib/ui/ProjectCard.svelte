@@ -1,4 +1,7 @@
 <script>
+    import ButtonPrimary from "$lib/ui/ButtonPrimary.svelte";
+    import ButtonOutline from "$lib/ui/ButtonOutline.svelte";
+
     let { project } = $props();
 </script>
 
@@ -17,6 +20,15 @@
                 <p class="text-fgDim text-xs md:text-sm">{project.year}</p>
             </div>
         </header>
-        <p class="text-sm md:text-base text-fgDim">{project.description}</p>
+        <p class="text-sm md:text-base text-fgDim mb-6">{project.description}</p>
+        <div class="flex gap-2">
+            {#each project.buttons as button, index}
+                {#if index === 0}
+                    <ButtonPrimary label={button.label} href={button.href}></ButtonPrimary>
+                {:else}
+                    <ButtonOutline label={button.label} href={button.href}></ButtonOutline>
+                {/if}
+            {/each}
+        </div>
     </div>
 </article>

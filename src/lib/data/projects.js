@@ -9,6 +9,10 @@ export const projects = [
     "personalNote": "This app was built during High Seas event from Hackclub.",
     "tags": [
       "Programming"
+    ],
+    "buttons": [
+      { "label": "Live demo", "href": "https://textual-web.io/limit6/expense_tracker"},
+      { "label": "Github", "href": "https://github.com/Limit-sest/Expense_tracker" },
     ]
   }
 ]

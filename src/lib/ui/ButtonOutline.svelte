@@ -1,7 +1,7 @@
 <script>
-    let { label, href } = $props();
+    let { label, href} = $props();
 </script>
 
-<a href="{href}" aria-label="{label}" class="font-display font-medium text-fgDim | flex justify-center items-center h-12 px-6 | rounded-full border border-fgDim">
+<a href="{href}" aria-label="{label} link button" class="py-1.5 px-4 | rounded-full | transition-all hover:bg-accent/30 font-display font-medium text-fgDim text-sm border border-fgDim">
     {label}
 </a>
