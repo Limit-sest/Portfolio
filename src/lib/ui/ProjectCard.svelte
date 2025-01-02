@@ -2,7 +2,7 @@
     let { project } = $props();
 </script>
 
-<article class="w-full mb-6">
+<article class="w-full mb-4">
     <div class="p-4 md:p-6 w-full bg-bgDim rounded-3xl">
         <div class="aspect-video w-full mb-3">
             <img class="object-cover rounded-lg w-full h-full" src="/projects/{project.id}.png" alt="{project.imgAlt}">

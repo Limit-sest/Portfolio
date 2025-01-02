@@ -3,7 +3,7 @@
     import PersonalCard from "$lib/ui/PersonalCard.svelte";
     import ProjectCard from "$lib/ui/ProjectCard.svelte";
     import { projects } from "$lib/data/projects.js";
-
+    // TODO: Show projects with quality > 5, other behind button
 </script>
 
 <main class="px-4 pt-20 flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
