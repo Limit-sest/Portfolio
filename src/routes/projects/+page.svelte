@@ -14,22 +14,7 @@
         <h2 class="w-full text-center text-fgDim font-display text-3xl">All projects</h2>
     </div>
 
-
-
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
-    <ProjectCard project={projects[0]}></ProjectCard>
+    {#each projects as project}
+        <ProjectCard project={project}></ProjectCard>
+    {/each}
 </main>

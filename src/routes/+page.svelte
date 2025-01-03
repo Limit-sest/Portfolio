@@ -2,10 +2,8 @@
     import PersonalCard from "$lib/ui/PersonalCard.svelte";
     import ProjectCard from "$lib/ui/ProjectCard.svelte";
     import { projects } from "$lib/data/projects.js";
-    // TODO: Personal note
-    // TODO: Overwrite personal note with hover (+accent effect)
     // TODO: Show projects with quality > 5, other behind button
-    // TODO: Section with design images, using mansory grid. Have a personal note option for every image.
+    // TODO: Section with design images, using mansory grid.
 </script>
 
 <main class="px-4 pt-20 flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
@@ -16,23 +14,11 @@
     </section>
 
     <section aria-label="My projects" class="w-full">
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-        <ProjectCard project={projects[0]}></ProjectCard>
-
+        {#each projects as project}
+            {#if project.quality >= 5}
+                <ProjectCard project={project}></ProjectCard>
+            {/if}
+        {/each}
     </section>
 
 </main>
