@@ -2,6 +2,7 @@
     import PersonalCard from "$lib/ui/PersonalCard.svelte";
     import ProjectCard from "$lib/ui/ProjectCard.svelte";
     import { projects } from "$lib/data/projects.js";
+    import ButtonPrimary from "$lib/ui/ButtonPrimary.svelte";
     // TODO: Show projects with quality > 5, other behind button
     // TODO: Section with design images, using mansory grid.
 </script>
@@ -19,6 +20,10 @@
                 <ProjectCard project={project}></ProjectCard>
             {/if}
         {/each}
+
+        <div class="flex my-8 w-full justify-center">
+            <ButtonPrimary label="View more projects" href="./projects"></ButtonPrimary>
+        </div>
     </section>
 
 </main>
