@@ -3,28 +3,50 @@
     import ProjectCard from "$lib/ui/ProjectCard.svelte";
     import { projects } from "$lib/data/projects.js";
     import ButtonPrimary from "$lib/ui/ButtonPrimary.svelte";
-    // TODO: Show projects with quality > 5, other behind button
-    // TODO: Section with design images, using mansory grid.
+    import { designs } from "$lib/data/designs.js";
+    // TODO Image optimization
 </script>
 
 <main class="px-4 pt-20 flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
     <h2 class="col-span-2 text-center text-fgDim font-display text-3xl my-8">Welcome to my portfolio!</h2>
 
-    <section aria-label="About me" class="w-full relative">
+    <section aria-label="About me" class="w-full relative h-full">
         <PersonalCard></PersonalCard>
     </section>
 
-    <section class="w-full">
-        <h2 class="w-full text-center text-fg font-display font-medium text-3xl mb-8">My projects</h2>
-        {#each projects as project}
-            {#if project.quality >= 5}
-                <ProjectCard project={project}></ProjectCard>
-            {/if}
-        {/each}
+    <div class="w-full col-span-1 col-start-2 flex flex-col gap-8">
+        <section>
+            <h2 class="w-full text-center text-fg font-display font-medium text-3xl mb-8">My projects</h2>
+            {#each projects as project}
+                {#if project.quality >= 5}
+                    <ProjectCard project={project}></ProjectCard>
+                {/if}
+            {/each}
 
-        <div class="flex my-8 w-full justify-center">
-            <ButtonPrimary label="View more projects" href="./projects"></ButtonPrimary>
-        </div>
-    </section>
+            <div class="flex my-8 w-full justify-center">
+                <ButtonPrimary label="View more projects" href="./projects"></ButtonPrimary>
+            </div>
+        </section>
+
+        <section >
+            <h2 class="w-full text-center text-fg font-display font-medium text-3xl mb-8">Graphic designs</h2>
+            <div class="flex flex-col gap-4">
+                {#each designs as design}
+                    {#if design.aspectRatio >= 2}
+                        <img alt={design.alt} src="designs/{design.id}.png" class="rounded-lg hover:scale-150 cursor-zoom-in transition-all duration-500"/>
+                    {/if}
+                {/each}
+
+                <div class="grid grid-cols-2 gap-4">
+                    {#each designs as design}
+                        {#if design.aspectRatio < 2}
+                            <img alt={design.alt} src="designs/{design.id}.png" class="rounded-lg hover:scale-150 cursor-zoom-in transition-all duration-500"/>
+                        {/if}
+                    {/each}
+                </div>
+            </div>
+
+        </section>
+    </div>
 
 </main>
