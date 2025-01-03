@@ -14,7 +14,8 @@
         <PersonalCard></PersonalCard>
     </section>
 
-    <section aria-label="My projects" class="w-full">
+    <section class="w-full">
+        <h2 class="w-full text-center text-fg font-display font-medium text-3xl mb-8">My projects</h2>
         {#each projects as project}
             {#if project.quality >= 5}
                 <ProjectCard project={project}></ProjectCard>
