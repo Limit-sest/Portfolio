@@ -49,5 +49,6 @@
         transition: opacity 0.2s;
         opacity: 0;
         margin: auto;
+        border-radius: 12px;
     }
 </style>
