@@ -1,6 +1,7 @@
 <script>
     import ButtonPrimary from "$lib/ui/ButtonPrimary.svelte";
     import ButtonOutline from "$lib/ui/ButtonOutline.svelte";
+    import Image from "$lib/ui/Image.svelte";
 
     let { project } = $props();
 </script>
@@ -8,7 +9,12 @@
 <article class="w-full mb-4">
     <div class="p-4 md:p-6 w-full bg-bgDim rounded-3xl">
         <div class="aspect-video w-full mb-3">
-            <img class="object-cover rounded-lg w-full h-full" src="/projects/{project.id}.png" alt="{project.imgAlt}">
+            <Image
+                    image="{project.id}.png"
+                    alt="{project.imgAlt}"
+                    loading="lazy"
+            />
+<!--            <img class="object-cover rounded-lg w-full h-full" src="/src/content/assets/projects/{project.id}.png" alt="{project.imgAlt}">-->
         </div>
         <header>
             <h3 class="font-medium text-xl text-fg font-display mb-1">{project.title}</h3>
