@@ -1,3 +1,8 @@
+<svelte:head>
+    <title>Portfolio • Antonín Kučera</title>
+    <meta name="description" content="Personal site of Antonín Kučera. I showcase my programming projects and graphic design." />
+</svelte:head>
+
 <script>
     import PersonalCard from "$lib/ui/PersonalCard.svelte";
     import ProjectCard from "$lib/ui/ProjectCard.svelte";
@@ -5,8 +10,6 @@
     import ButtonPrimary from "$lib/ui/ButtonPrimary.svelte";
     import { designs } from "$lib/data/designs.js";
     import Image from "$lib/ui/Image.svelte";
-    // TODO Optimize fonts (fontsource)
-    // TODO SEO Lighthouse
 </script>
 
 <main class="px-4 pt-20 flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">

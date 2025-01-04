@@ -1,3 +1,8 @@
+<svelte:head>
+    <title>All projects • Antonín Kučera</title>
+    <meta name="description" content="All projects that Antonín Kučera has created." />
+</svelte:head>
+
 <script>
     import HomeIcon from "virtual:icons/lucide/house"
     import ProjectCard from "$lib/ui/ProjectCard.svelte";
