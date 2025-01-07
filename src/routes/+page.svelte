@@ -10,6 +10,9 @@
     import ButtonPrimary from "$lib/ui/ButtonPrimary.svelte";
     import { designs } from "$lib/data/designs.js";
     import Image from "$lib/ui/Image.svelte";
+
+    projects.sort((a, b) => b.quality - a.quality)
+    designs.sort((a, b) => b.quality - a.quality)
 </script>
 
 <main class="px-4 pt-20 flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">

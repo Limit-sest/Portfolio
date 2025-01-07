@@ -7,6 +7,8 @@
     import HomeIcon from "virtual:icons/lucide/house"
     import ProjectCard from "$lib/ui/ProjectCard.svelte";
     import { projects } from "$lib/data/projects.js";
+
+    projects.sort((a, b) => b.quality - a.quality)
 </script>
 
 <main class="px-4 pt-20 flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
