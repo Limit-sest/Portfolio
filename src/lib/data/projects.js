@@ -43,4 +43,19 @@ export const projects = [
       { "label": "Instagram", "href": "https://www.instagram.com/zpravy.uobory/" },
     ]
   },
+  {
+    "title": "Namedays in stories",
+    "id": "namedays_in_stories",
+    "imgAlt": "Showcase of story with current date and current nameday.",
+    "year": "2024",
+    "quality": 5,
+    "description": "Python script that automatically posts stories with current czech nameday. Its using Instagram API and an API for retrieving namedays.",
+    "tags": [
+      "Programming",
+      "Design"
+    ],
+    "buttons": [
+      { "label": "Github", "href": "https://github.com/Limit-sest/den-ve-story" },
+    ]
+  },
 ]
