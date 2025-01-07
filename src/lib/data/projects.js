@@ -34,7 +34,7 @@ export const projects = [
     "imgAlt": "Grid of news posts.",
     "year": "2023-2024",
     "quality": 7,
-    "description": "Instagram page for the primary school ZŠ U Obory. I created the profile and was responsible for the design and content.",
+    "description": "Instagram page for news from the primary and middle school ZŠ U Obory. I created the profile and was responsible for the design and content.",
     "tags": [
       "Design",
       "Social media"
