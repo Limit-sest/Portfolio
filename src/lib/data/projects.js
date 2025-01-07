@@ -28,5 +28,19 @@ export const projects = [
       { "label": "Github", "href": "https://github.com/Limit-sest/Bakalari-calendar" },
     ]
   },
-
+  {
+    "title": "ZŠ U Obory news",
+    "id": "zpravy_zsuo",
+    "imgAlt": "Grid of news posts.",
+    "year": "2023-2024",
+    "quality": 7,
+    "description": "Instagram page for the primary school ZŠ U Obory. I created the profile and was responsible for the design and content.",
+    "tags": [
+      "Design",
+      "Social media"
+    ],
+    "buttons": [
+      { "label": "Instagram", "href": "https://www.instagram.com/zpravy.uobory/" },
+    ]
+  },
 ]
