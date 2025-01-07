@@ -14,3 +14,9 @@
     }
 
 }
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgb(var(--color-bg));
+    color: rgb(var(--color-fg));
+}
