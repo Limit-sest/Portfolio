@@ -62,7 +62,7 @@ export const projects = [
     "title": "Snejks",
     "id": "snejks",
     "imgAlt": "Screenshot from the game with a Snejks text title.",
-    "year": "2024",
+    "year": "2023",
     "quality": 4,
     "description": "Game made with Python and Pygame library. It's a simple snake game with a few extra features, like player-created walls.",
     "tags": [
@@ -70,6 +70,20 @@ export const projects = [
     ],
     "buttons": [
       { "label": "Github", "href": "https://github.com/Limit-sest/snejks" },
+    ]
+  },
+  {
+    "title": "(de)cipher",
+    "id": "de-cipher",
+    "imgAlt": "Title text (de)cipher with a random text string in the backgorund.",
+    "year": "2023",
+    "quality": 2,
+    "description": "My recreation of the Caesar cipher in Python. It is one of my first projects and I used it to learn the basics of Python.",
+    "tags": [
+      "Programming"
+    ],
+    "buttons": [
+      { "label": "Github", "href": "https://github.com/Limit-sest/de-cipher" },
     ]
   },
 ]
