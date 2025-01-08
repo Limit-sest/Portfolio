@@ -58,4 +58,18 @@ export const projects = [
       { "label": "Github", "href": "https://github.com/Limit-sest/den-ve-story" },
     ]
   },
+  {
+    "title": "Snejks",
+    "id": "snejks",
+    "imgAlt": "Screenshot from the game with a Snejks text title.",
+    "year": "2024",
+    "quality": 4,
+    "description": "Game made with Python and Pygame library. It's a simple snake game with a few extra features, like player-created walls.",
+    "tags": [
+      "Programming"
+    ],
+    "buttons": [
+      { "label": "Github", "href": "https://github.com/Limit-sest/snejks" },
+    ]
+  },
 ]
