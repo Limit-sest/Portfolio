@@ -22,7 +22,7 @@
     {@render children()}
 </div>
 
-<footer class="bg-bgDim w-full p-4">
+<footer class="bg-bgDim w-full p-4 mt-32">
     <div class="p-4 grid grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
         <div class="flex flex-col md:flex-row gap-1 justify-between">
             {#each webLinks as link, i}
