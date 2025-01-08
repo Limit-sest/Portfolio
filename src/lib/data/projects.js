@@ -49,7 +49,7 @@ export const projects = [
     "imgAlt": "Showcase of story with current date and current nameday.",
     "year": "2024",
     "quality": 5,
-    "description": "Python script that automatically posts stories with current czech nameday. Its using Instagram API and an API for retrieving namedays.",
+    "description": "Python script that automatically posts stories with current czech nameday. It is using Instagram API and an API for retrieving namedays.",
     "tags": [
       "Programming",
       "Design"
