@@ -12,7 +12,15 @@
     import Image from "$lib/ui/Image.svelte";
 
     projects.sort((a, b) => b.quality - a.quality)
-    designs.sort((a, b) => b.quality - a.quality)
+
+    let designsWide = designs.filter(design => design.aspectRatio >= 1.5)
+    let designsTall = designs.filter(design => design.aspectRatio < 1.5)
+
+    designsWide.sort((a, b) => b.quality - a.quality)
+    designsTall.sort((a, b) => b.quality - a.quality)
+
+    let designsTall1 = designsTall.filter((_, index) => index % 2 === 0);
+    let designsTall2 = designsTall.filter((_, index) => index % 2 === 1);
 </script>
 
 <main class="px-4 pt-20 flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
@@ -39,26 +47,33 @@
         <section >
             <h2 class="w-full text-center text-fg font-display font-medium text-3xl mb-8">Graphic designs</h2>
             <div class="flex flex-col gap-4">
-                {#each designs as design}
-                    {#if design.aspectRatio >= 1.5}
-                        <Image
-                                image="{design.id}.png"
-                                alt="{design.alt}"
-                                loading="lazy"
-                        />
-                    {/if}
+                {#each designsWide as design}
+                    <Image
+                            image="{design.id}.png"
+                            alt="{design.alt}"
+                            loading="lazy"
+                    />
                 {/each}
 
                 <div class="grid grid-cols-2 gap-4">
-                    {#each designs as design}
-                        {#if design.aspectRatio < 1.5}
+                    <div class="flex flex-col gap-4">
+                        {#each designsTall1 as design}
                             <Image
                                     image="{design.id}.png"
                                     alt="{design.alt}"
                                     loading="lazy"
                             />
-                        {/if}
-                    {/each}
+                        {/each}
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        {#each designsTall2 as design}
+                            <Image
+                                    image="{design.id}.png"
+                                    alt="{design.alt}"
+                                    loading="lazy"
+                            />
+                        {/each}
+                    </div>
                 </div>
             </div>
 
