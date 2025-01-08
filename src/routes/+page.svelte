@@ -40,7 +40,7 @@
             <h2 class="w-full text-center text-fg font-display font-medium text-3xl mb-8">Graphic designs</h2>
             <div class="flex flex-col gap-4">
                 {#each designs as design}
-                    {#if design.aspectRatio >= 2}
+                    {#if design.aspectRatio >= 1.5}
                         <Image
                                 image="{design.id}.png"
                                 alt="{design.alt}"
@@ -51,7 +51,7 @@
 
                 <div class="grid grid-cols-2 gap-4">
                     {#each designs as design}
-                        {#if design.aspectRatio < 2}
+                        {#if design.aspectRatio < 1.5}
                             <Image
                                     image="{design.id}.png"
                                     alt="{design.alt}"
