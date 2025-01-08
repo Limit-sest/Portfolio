@@ -21,7 +21,7 @@
             <div class="flex gap-1.5 mb-2" aria-label="Tags of {project.title}">
                 {#each project.tags as tag}
                     <p class="text-fgDim text-xs md:text-sm">{tag}</p>
-                    <p class="text-fgDim/75 text-xs md:text-sm">•</p>
+                    <span class="text-fgDim/75 text-xs md:text-sm">•</span>
                 {/each}
                 <p class="text-fgDim text-xs md:text-sm">{project.year}</p>
             </div>
