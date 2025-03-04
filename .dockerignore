@@ -1,0 +1,26 @@
+# Node/Bun dependency folders
+node_modules
+bun.lockb
+bun.lockb.*
+
+# Local development files
+dist
+.svelte-kit
+.vscode
+.idea
+*.log
+*.swp
+
+# Git & version control
+.git
+.gitignore
+
+# Docker files (to avoid accidental copying)
+Dockerfile
+.dockerignore
+
+# Environment & configuration files
+.env
+.env.local
+.env.development
+.env.production
